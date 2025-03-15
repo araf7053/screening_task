@@ -14,7 +14,7 @@ function App() {
     }
 
     try {
-      const response = await axios.get("https://screening-task-backend-ivcq.onrender.com/api/greet", {
+      const response = await axios.get("/api/greet", {
         params: { name },
       });
       setMessage(response.data.message);
